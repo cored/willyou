@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= @title %></title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/Javascript">
+      $(document).ready(function) {
+      }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <div id="content">
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <p>
+      <form action="/add" method="post">
+        <input type="text" name="will" id="will"/>
+        <label for="will">Will</label>
+        <input type="text" name="you" id="you"/>
+        <label for="you">You</label>
+        <input type="submit" name="add" value="add" />
+      </form>
+      </p>
+      <p>
+      <a href="#">about</a>
+      </p>
+    </div>
+  </body>
+</html>
